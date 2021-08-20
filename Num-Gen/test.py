@@ -1,4 +1,11 @@
 import string
 import random
-letters1 = random.choice(string.ascii_letters) + random.choice(string.ascii_letters)+random.choice(string.ascii_letters)+random.choice(string.ascii_letters)+random.choice(string.ascii_letters)
-print(letters1.lower())
+letters = 'abcde'
+numbers = '12345'
+count = 0
+newstr = ''
+while count < 5:
+    newstr += letters[count]+numbers[count]
+    count+=1
+
+print(newstr)
